@@ -1,0 +1,222 @@
+/*Login*/
+.login-body {
+    background-color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-container h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login-form input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.btn-login {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #2980b9;
+}
+
+/*Dashboard*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+div {
+    max-width: 800px;
+    margin: auto;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.item {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item h2 {
+    margin-bottom: 1rem;
+    color: #34495e;
+}
+
+.btn {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-signin {
+    background-color: #27ae60;
+    color: #fff;
+}
+.btn-signin:hover {
+    background-color: #219150;
+}
+
+.btn-deleteUser {
+    background-color: #e74c3c;
+    color: #fff;
+}
+.btn-deleteUser:hover {
+    background-color: #c0392b;
+}
+
+.btn-modify {
+    background-color: #f39c12;
+    color: #fff;
+}
+.btn-modify:hover {
+    background-color: #d68910;
+}
+
+.btn-search {
+    background-color: #2980b9;
+    color: #fff;
+}
+.btn-search:hover {
+    background-color: #1c6690;
+}
+
+.btn-exit {
+    display: block;
+    margin: 2rem auto 0;
+    background-color: #7f8c8d;
+    color: white;
+}
+.btn-exit:hover {
+    background-color: #616a6b;
+}
+
+/* signin */
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn-cancel {
+    background-color: #ac3333;
+    color: #f9f9f9;
+    border-radius: 20px;
+}
+
+.btn-add {
+    background-color: #27ae60;
+    color: #FFFF;
+}
+
+/* delete */
+
+.danger-text {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+}
+.btn-delete:hover {
+    background-color: #c0392b;
+}
+
+/* modify */
+.btn-save {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    background-color: #fb3408; 
+    color: #ffffff; 
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+/* search */
+.btn-print {
+    background-color: #27ae60; 
+    color: #ffffff; 
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
