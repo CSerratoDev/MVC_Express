@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RRHH Taller Node.js S.A. de C.V.</title>
+    <title>MVC Express</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -15,29 +15,52 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body class="login-body">
-    <div class="login-container">
-        <div class="row mt-5">
-            <div class="col-6 offset-3">
-                <h1>Login</h1>
+<body>
+    <header id="Home">
+        <nav class="nav-container">
+            <h3>MVC Express</h3>
+            <ul>
+                <li><a class="active" href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Tecnologics">Tecnologics</a></li>
+            </ul>
+        </nav>
+    </header>
+        <h3 class="section-h3">About this project</h3>
+        <section class="row" id="About">
+            <div class="column">
+                <p>This project follows the <strong>MVC (Model-View-Controller)</strong> architectural pattern using <strong>Express.js</strong> as the backend framework.</p>
+                <p>The <strong>Model</strong> layer handles all interactions with a <strong>MySQL</strong> database, such as user data storage and retrieval.</p>
+                <p>The <strong>Controller</strong> layer contains the business logic and routes that connect the client with the database, responding to user actions and API requests.</p>
+                <p>The <strong>View</strong> layer, although minimal in this setup, is used for rendering HTML pages or sending JSON responses.</p>
+                <p>To manage authentication securely, the project uses <strong>JWT (JSON Web Tokens)</strong>, allowing users to log in and receive a token that must be included in future requests to access protected routes.</p>
+                <small>This ensures that only authorized users—such as admins—can perform sensitive operations like creating, updating, or deleting user records.</small>
             </div>
-        </div>
-        <div class="row align-items-center">
-            <div class="login-form">
-                <div class="form-group">
-                    <label for="input-mail">Email</label>
-                    <input type="email" class="form-control" id="input-mail" placeholder="email@gmail.com">
-                    <small class="form-text text-muted">The email address you signed up with.</small>
-                </div>
-                <div class="form-group">
-                    <label for="input-password">Password</label>
-                    <input type="password" class="form-control" id="input-password" placeholder="***********">
-                </div>
-                <div class="d-flex justify-content-between">
-                    <button class="btn-login btn-primary">Login</button>
-                </div>
+            <div class="column">
+                <article>
+                    <form>
+                        <label for="input-mail">Email</label>
+                        <input type="email" id="input-mail" placeholder="email@gmail.com"><br>
+                        <small>The email address you signed up with.</small><br>
+                        <label for="input-password">Password</label>
+                        <input type="password" id="input-password" placeholder="***********">
+                    </form>
+                    <button class="btn btn-login btn-primary">Login</button>
+                    <button class="btn btn-signup">Signup</button>
+                </article>
             </div>
-        </div>
-    </div>
+        </section>
+        <h3 class="section-h3">Used Tecnologics</h3>
+        <section class="line" id="Tecnologics">
+            <img src="https://res.cloudinary.com/drxg6xc6a/image/upload/v1749513792/express_m8prhb.svg" alt="Express" width="100" height="100">
+            <img src="https://res.cloudinary.com/drxg6xc6a/image/upload/v1749513793/html5_zpuyyw.svg" alt="HTML5" width="100" height="100">
+            <img src="https://res.cloudinary.com/drxg6xc6a/image/upload/v1749513791/css_uzzhfz.svg" alt="CSS3" width="100" height="100">
+            <img src="https://res.cloudinary.com/drxg6xc6a/image/upload/v1749513789/js_ml0efn.svg" alt="Javascript" width="100" height="100">
+            <img src="https://res.cloudinary.com/drxg6xc6a/image/upload/v1749513790/mysql_hui5ke.svg" alt="MySQL" width="100" height="100">            
+        </section>
+    <footer> 
+        <p>All Rights Reserved 2025 | By cserrato.dev</p>
+        <p><a href="https://linktr.ee/serratomx" target="_blank">Social Media</a></p>
+    </footer>
 </body>
 </html>

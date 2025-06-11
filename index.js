@@ -1,5 +1,12 @@
+const dotenv = require('dotenv')
+dotenv.config()
+
 const morgan = require('morgan');
 const express = require('express');
+const initDB = require('./db/init')
+
+initDB()
+
 const app = express();
 
 const admin = require('./routes/admin');

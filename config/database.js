@@ -1,12 +1,13 @@
 const mysql = require('mysql2/promise');
-const util = require('util');
 
 const pool = mysql.createPool({
     connectionLimit: 10,
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'tallerNodeJs'
+    waitForConnections: true,
+    multipleStatements: true,
+    host: process.env.DATABASE_HOST,
+    user: process.env.DATABASE_USER,
+    password: process.env.DATABASE_PASS,    
+    database: process.env.DATABASE_NAME
 });
 
 module.exports = pool;

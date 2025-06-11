@@ -10,14 +10,8 @@ admin.get('/login', (req, res) => {
 admin.post('/login', async (req, res, next) => {
     const { email, password } = req.body;
 
-    console.log("Email recibido:", email);
-    console.log("Password recibido:", password);
-
     const query = `SELECT * FROM admin WHERE email = ? AND password = ?`;
     const [rows] = await db.query(query, [email, password]);
-
-    console.log("¿rows es un array?", Array.isArray(rows));
-    console.log("Contenido de rows:", rows);
 
     if (email && password) {
         if (rows.length === 1) {
