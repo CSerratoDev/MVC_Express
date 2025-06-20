@@ -17,46 +17,60 @@
 </head>
 
 <body>
-    <div class="login-container">
-        <div class="row mt-5">
-            <div class="col-6 offset-3">
-                <h1>SignIn</h1>
-            </div>
+    <header id="Home">
+        <nav class="nav-container">
+            <h3>MVC Express</h3>
+            <button type="button" class="btn btn-logout btn-exit">Logout</button>
+        </nav>
+    </header>
+     <div class="body-dashboard">
+        <div class="sidenav">
+            <a href="#" class="btn-signin">New Employee</a>
+            <a href="#" class="btn-modify">Modify Employee</a>
+            <a href="#" class="btn-deleteUser">Delete Employee</a>
         </div>
-        <div class="login-form row align-items-center">
-            <div class="col-6 offset-3">
-                <div class="form-group">
-                    <label for="input-name">Name</label>
-                    <input type="text" class="form-control" id="input-name" placeholder="Alexis">
-                    <small class="form-text text-muted">Your name.</small>
+        <div class="content">
+            <div class="login-container">
+                <div class="row mt-5">
+                    <div class="col-6 offset-3">
+                        <h3>SignIn</h3>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="input-lastName">Last Name</label>
-                    <input type="text" class="form-control" id="input-lastName" placeholder="Serrato">
-                    <small class="form-text text-muted">Your last name.</small>
-                </div>                
-                <div class="form-group">
-                    <label for="input-phoneNumber">Phone Number</label>
-                    <input type="text" class="form-control" id="input-phoneNumber" placeholder="4421XXXXX">
-                    <small class="form-text text-muted">Your phone number personal.</small>
-                </div>
-                <div class="form-group">
-                    <label for="input-address">Address</label>
-                    <input type="text" class="form-control" id="input-address" placeholder="Juriquilla, Querétaro">
-                    <small class="form-text text-muted">Your address.</small>
-                </div>                                
-                <div class="form-group">
-                    <label for="input-mail">Email</label>
-                    <input type="email" class="form-control" id="input-mail" placeholder="email@gmail.com">
-                    <small class="form-text text-muted">An email to register.</small>
-                </div>
-                <div class=" form-buttons d-flex justify-content-between">
-                    <button class="btn btn-add">SingIn</button>
-                    <button class="btn btn-cancel">Exit</button>
+                <div class="login-form row align-items-center">
+                    <div class="col-6 offset-3">
+                        <div class="form-group">
+                            <label for="input-name">Name</label>
+                            <input type="text" class="form-control" id="input-name" placeholder="Alexis">
+                            </div>
+                        <div class="form-group">
+                            <label for="input-lastName">Last Name</label>
+                            <input type="text" class="form-control" id="input-lastName" placeholder="Serrato">
+                            </div>                
+                        <div class="form-group">
+                            <label for="input-phoneNumber">Phone Number</label>
+                            <input type="text" class="form-control" id="input-phoneNumber" placeholder="4421XXXXX">
+                            </div>
+                        <div class="form-group">
+                            <label for="input-address">Address</label>
+                            <input type="text" class="form-control" id="input-address" placeholder="Juriquilla, Querétaro">
+                        </div>                                
+                        <div class="form-group">
+                            <label for="input-mail">Email</label>
+                            <input type="email" class="form-control" id="input-mail" placeholder="email@gmail.com">
+                        </div>
+                        <div class=" form-buttons d-flex justify-content-between">
+                            <button class="button btn-add -green">SignIn</button>
+                            <button class="button btn-cancel -salmon">Exit</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+        <p>All Rights Reserved 2025 | By cserrato.dev</p>
+        <p><a href="https://linktr.ee/serratomx" target="_blank">Social Media</a></p>
+    </footer>
 </body>
 
 </html>

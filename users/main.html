@@ -3,33 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MVC Express</title>
+    <title>MVC Dashboard</title>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>   
     <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div>
-        <h1>Welcome</h1>
-        <div class="dashboard">
-            <div class="item">
-                <h2 class="add">New Employee</h2>
-                <button type="button" class="btn btn-signin">Signup</button>
-            </div>
-            <div class="item">
-                <h2 class="delete">Delete Employee</h2>
-                <button type="button" class="btn btn-deleteUser">Delete</button>
-            </div>
-            <div class="item">
-                <h2 class="modify">Modify Employee</h2>
-                <button type="button" class="btn btn-modify">Modify</button>
-            </div>
-            <div class="item">
-                <h2 class="search">Search Employee</h2>
-                <button type="button" class="btn btn-search">Search Employee</button>
+    <header id="Home">
+        <nav class="nav-container">
+            <h3>MVC Express</h3>
+            <button type="button" class="btn btn-logout btn-exit">Logout</button>
+        </nav>
+    </header>
+    <div class="body-dashboard">
+        <div class="sidenav">
+            <a href="#" class="btn-signin">New Employee</a>
+            <a href="#" class="btn-modify">Modify Employee</a>
+            <a href="#" class="btn-deleteUser">Delete Employee</a>
+        </div>
+        <div class="content">
+            <div id="search-section" class="search-container">
+                <h2>Search Employee</h2>
+                <input type="text" id="input-name" placeholder="Name Employee">
+                <button type="button" class="button btn-search -dark" >Search</button>
+                <button type="button" class="button btn-print -regular">Print All</button>
+                <button type="button" class="button btn-cancel -salmon">Cancel</button>
+                <div id="Tbody"></div>
             </div>
         </div>
-        <button type="button" class="btn btn-exit">Exit</button>
     </div>
+    <footer>
+        <p>All Rights Reserved 2025 | By cserrato.dev</p>
+        <p><a href="https://linktr.ee/serratomx" target="_blank">Social Media</a></p>
+    </footer>
 </body>
 </html>

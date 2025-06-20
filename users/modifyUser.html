@@ -13,24 +13,43 @@
         <link rel="stylesheet" href="./styles.css" />
     </head>
     <body>
-        <div class="login-container">
-            <div>
+        <header id="Home">
+            <nav class="nav-container">
+                <h3>MVC Express</h3>
+                <button type="button" class="btn btn-logout btn-exit">Logout</button>
+            </nav>
+        </header>
+        <div class="body-dashboard">
+            <div class="sidenav">
+                <a href="#" class="btn-signin">New Employee</a>
+                <a href="#" class="btn-modify">Modify Employee</a>
+                <a href="#" class="btn-deleteUser">Delete Employee</a>
+            </div>
+            <div class="content">
+                <div class="login-container">
                 <div>
-                    <h1>MVC Express</h1>
-                    <div class="login-form">
-                        <input type="number" id="input-userId" placeholder="User ID" />
-                        <input type="text" id="input-name" placeholder="New Name" />
-                        <input type="text" id="input-lastName" placeholder="New Last Name" />
-                        <input type="email" id="input-mail" placeholder="New Email" />
-                        <input type="text" id="input-phoneNumber" placeholder="New Phone Number" />
-                        <input type="text" id="input-address" placeholder="New Address" />
+                    <div>
+                        <h1>MVC Express</h1>
+                        <div class="login-form">
+                            <input type="number" id="input-userId" placeholder="User ID" />
+                            <input type="text" id="input-name" placeholder="New Name" />
+                            <input type="text" id="input-lastName" placeholder="New Last Name" />
+                            <input type="email" id="input-mail" placeholder="New Email" />
+                            <input type="text" id="input-phoneNumber" placeholder="New Phone Number" />
+                            <input type="text" id="input-address" placeholder="New Address" />
+                        </div>
+                        <div class="form-buttons">
+                            <button type="button" class="button btn-save -dark">Modify User</button>
+                            <button type="button" class="button btn-cancel -salmon">Cancel</button>
+                        </div>
                     </div>
-                    <div class="form-buttons">
-                        <button type="button" class="btn-save">Modify User</button>
-                        <button type="button" class="btn-cancel">Cancel</button>
-                    </div>
+                </div>
                 </div>
             </div>
         </div>
+        <footer>
+            <p>All Rights Reserved 2025 | By cserrato.dev</p>
+            <p><a href="https://linktr.ee/serratomx" target="_blank">Social Media</a></p>
+        </footer>
     </body>
 </html>

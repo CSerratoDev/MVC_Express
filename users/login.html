@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +29,7 @@
         <section class="row" id="About">
             <div class="column">
                 <p>This project follows the <strong>MVC (Model-View-Controller)</strong> architectural pattern using <strong>Express.js</strong> as the backend framework.</p>
-                <p>The <strong>Model</strong> layer handles all interactions with a <strong>MySQL</strong> database, such as user data storage and retrieval.</p>
+                <p>The <strong>Model</strong> layer handles all interactions with a <strong>MySQL</strong> database, such as user data storage and retrieval. The MySQL database runs inside a <strong>Docker</strong> container, providing an isolated and consistent environment for development and testing.</p>
                 <p>The <strong>Controller</strong> layer contains the business logic and routes that connect the client with the database, responding to user actions and API requests.</p>
                 <p>The <strong>View</strong> layer, although minimal in this setup, is used for rendering HTML pages or sending JSON responses.</p>
                 <p>To manage authentication securely, the project uses <strong>JWT (JSON Web Tokens)</strong>, allowing users to log in and receive a token that must be included in future requests to access protected routes.</p>
@@ -46,7 +45,9 @@
                         <input type="password" id="input-password" placeholder="***********">
                     </form>
                     <button class="btn btn-login btn-primary">Login</button>
+                    <!--Configurar el signup-->
                     <button class="btn btn-signup">Signup</button>
+                    <p>Use: admin@gmail.com | 12345678</p>
                 </article>
             </div>
         </section>
@@ -56,7 +57,8 @@
             <img src="https://res.cloudinary.com/drxg6xc6a/image/upload/v1749513793/html5_zpuyyw.svg" alt="HTML5" width="100" height="100">
             <img src="https://res.cloudinary.com/drxg6xc6a/image/upload/v1749513791/css_uzzhfz.svg" alt="CSS3" width="100" height="100">
             <img src="https://res.cloudinary.com/drxg6xc6a/image/upload/v1749513789/js_ml0efn.svg" alt="Javascript" width="100" height="100">
-            <img src="https://res.cloudinary.com/drxg6xc6a/image/upload/v1749513790/mysql_hui5ke.svg" alt="MySQL" width="100" height="100">            
+            <img src="https://res.cloudinary.com/drxg6xc6a/image/upload/v1749513790/mysql_hui5ke.svg" alt="MySQL" width="100" height="100">
+            <img src="https://res.cloudinary.com/drxg6xc6a/image/upload/v1749534053/docker_opx6qk.svg" alt="Docker" width="100" height="100">            
         </section>
     <footer> 
         <p>All Rights Reserved 2025 | By cserrato.dev</p>

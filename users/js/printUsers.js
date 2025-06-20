@@ -2,12 +2,12 @@ window.onload = init;
 function init() {
     if(localStorage.getItem('token')){
         token = localStorage.getItem('token');
-        document.querySelector('.btn-cancel').addEventListener('click', function(){
-            window.location.href = 'main.html';
-        });
         document.querySelector('.btn-search').addEventListener('click', searchUser);
         document.querySelector('.btn-print').addEventListener('click', printAll);
-        
+        document.querySelector('.btn-cancel').addEventListener('click', function(){
+            document.querySelector('#search-section').classList.add('hidden');
+            document.querySelector('.card-container').classList.remove('hidden');
+        });
     }
     else {
         window.location.href = 'index.html';
@@ -21,6 +21,7 @@ function printAll() {
         }
     }).then(function(res) {
         if(res.data.code == 200){
+            showResultsSection();
             DisplayUsers(res.data.message);
         }
     }).catch(function(err) {
@@ -38,12 +39,18 @@ function searchUser(){
         }
     }).then(function(res) {
         if(res.data.code == 200){
+            showResultsSection();
             DisplayUsers(res.data.message);
         }
     }).catch(function(err) {
         console.log(err);
         alert("An error occurred");
     });
+}
+
+function showResultsSection() {
+    document.querySelector('.card-container').classList.add('hidden');
+    document.querySelector('#search-section').classList.remove('hidden');
 }
 
 function DisplayUsers(user){
