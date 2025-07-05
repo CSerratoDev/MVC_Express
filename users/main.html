@@ -6,27 +6,26 @@
     <title>MVC Dashboard</title>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>   
     <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header id="Home">
-        <nav class="nav-container">
-            <h3>MVC Express</h3>
-            <button type="button" class="btn btn-logout btn-exit">Logout</button>
-        </nav>
-    </header>
     <div class="body-dashboard">
         <div class="sidenav">
+            <h3>Dashboard</h3>
             <a href="#" class="btn-signin">New Employee</a>
             <a href="#" class="btn-modify">Modify Employee</a>
             <a href="#" class="btn-deleteUser">Delete Employee</a>
+            <button type="button" class="btn btn-logout btn-exit">Logout</button>
         </div>
         <div class="content">
+            <h2>Search Employee</h2>
             <div id="search-section" class="search-container">
-                <h2>Search Employee</h2>
                 <input type="text" id="input-name" placeholder="Name Employee">
-                <button type="button" class="button btn-search -dark" >Search</button>
+                <button type="button" class="button btn-search -dark">
+                    <i class="fas fa-search"></i>
+                </button>
                 <button type="button" class="button btn-print -regular">Print All</button>
                 <button type="button" class="button btn-cancel -salmon">Cancel</button>
                 <div id="Tbody"></div>
