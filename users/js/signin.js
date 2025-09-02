@@ -2,6 +2,8 @@ window.onload = init;
 function init() {
     if(localStorage.getItem('token')){
         token = localStorage.getItem('token');
+        document.querySelector('.btn-modify').addEventListener('click', modifyUser);
+        document.querySelector('.btn-deleteUser').addEventListener('click', deleteUser);
         document.querySelector('.btn-cancel').addEventListener('click', function(){
             window.location.href = 'main.html';
         });
@@ -11,6 +13,15 @@ function init() {
     else {
         window.location.href = 'index.html';
     }
+}
+
+
+function modifyUser() {
+    window.location.href = 'modifyUser.html';
+}
+
+function deleteUser() {
+    window.location.href = 'deleteUser.html';
 }
 
 function signin() {

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MVC Express</title>
+        <title>Dashboard Delete</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -23,14 +23,20 @@
             </div>
             <div class="content">
                 <div class="login-container">
-                        <h1>Delete Employee</h1>
-                    <div>
-                        <div>
-                            <label for="input-userId" class="danger-text">User Id</label>
-                            <input type="number" class="form-control" id="input-userId" placeholder="1234">
-                            <div class="form-buttons">
-                                <button class="button btn-delete -salmon">Delete</button>
-                                <button class="button btn-cancel -dark">Exit</button> 
+                    <div class="row mt-5">
+                        <div class="col-6 offset-3">
+                            <h3>Delete Employee</h3>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-6 offset-3">
+                            <div class="form-group">
+                                <label for="input-userId" class="danger-text">User Id</label>
+                                <input type="number" class="form-control" id="input-userId" placeholder="1234">
+                                <div class="form-buttons">
+                                    <button class="button btn-cancel">Exit</button> 
+                                    <button class="button btn-delete">Delete</button>
+                                </div>
                             </div>
                         </div>
                     </div>

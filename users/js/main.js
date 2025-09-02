@@ -16,8 +16,9 @@ function init() {
 function signin() {
     window.location.href = 'signin.html';
 }
+
 function deleteUser() {
-    window.location.href = 'deleteuser.html';
+    window.location.href = 'deleteUser.html';
 }
 
 function modifyUser() {
@@ -32,4 +33,3 @@ function logOut() {
     localStorage.removeItem('token');
     window.location.href = 'index.html';
 }
-

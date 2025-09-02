@@ -1,7 +1,10 @@
 window.onload = init;
 function init() {
-if (localStorage.getItem('token')) {
+  if(localStorage.getItem('token')) {
     token = localStorage.getItem('token');
+    document.querySelector('.btn-signin').addEventListener('click', signin);
+    document.querySelector('.btn-deleteUser').addEventListener('click', deleteUser);
+    
     const cancelBtn = document.querySelector('.btn-cancel');
     if (cancelBtn) {
         cancelBtn.addEventListener('click', function () {
@@ -18,9 +21,17 @@ if (localStorage.getItem('token')) {
         window.location.href = 'index.html';
     }
 }
+
+function signin() {
+  window.location.href = 'signin.html'
+}
+
+function deleteUser() {
+  window.location.href = 'deleteUser.html'
+}
+
 function modifyUser() {
   const userId = document.getElementById('input-userId').value;
-
   const name = document.getElementById('input-name').value.trim();
   const lastName = document.getElementById('input-lastName').value.trim();
   const email = document.getElementById('input-mail').value.trim();
